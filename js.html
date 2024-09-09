@@ -1,0 +1,71 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // ---------------------------------------------------------Q1
+      function palindrome(str) {
+        let result = str.split("").reverse().join("");
+        console.log(result);
+      }
+      palindrome("level");
+      // -------------------------------------------------------------------Q4
+      //   OPTIMIZATION REQUIRED
+      let btn = document.createElement("button");
+      document.body.appendChild(btn);
+      btn.innerHTML = "hello";
+      btn.addEventListener("click", () => {
+        btn.innerHTML = "world";
+      });
+      // ------------------------------------------------------------Q2
+      let input = [
+        1,
+        2,
+        "hello",
+        " world",
+        { name: "Alice", age: 30 },
+        { name: "Alice", age: 30 },
+        [1, 2, 3],
+        [1, 2, 3],
+        "hello",
+        3,
+        [4, 5, { nested: "object" }],
+        [4, 5, { nested: "object" }],
+        { nested: [1, 2, 3] },
+        { nested: [1, 2, 3] },
+      ];
+      function remove_duplicate(inp) {
+        let result = [];
+        let solve = new Set();
+        inp.forEach((item) => {
+          let stringed_item = JSON.stringify(item);
+          if (!solve.has(stringed_item)) {
+            result.push(item);
+            solve.add(stringed_item);
+          }
+        });
+        console.log(result);
+      }
+      remove_duplicate(input);
+      // ----------------------------------------------------------------Q3
+      // class Animal {
+      //   speak() {
+      //     console.log(`dog speak.`);
+      //   }
+      // }
+      // class Dog extends Animal {
+      //   speak() {
+      //     console.log(`dog barks.`);
+      //   }
+      // }
+      // const genericAnimal = new Animal("Dog");
+      // genericAnimal.speak();
+      // const dog = new Dog("Dog");
+      // dog.speak()
+    </script>
+  </body>
+</html> -->
